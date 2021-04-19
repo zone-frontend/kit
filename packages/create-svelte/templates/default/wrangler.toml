@@ -5,6 +5,11 @@ workers_dev = true
 route = ""
 zone_id = ""
 
+routes = [
+	"svelte-kit-demo.richard-a-harris.workers.dev/*",
+	"cloudflare-workers.demo.svelte.dev/*"
+]
+
 [site]
 bucket = "./.cloudflare/assets"
 entry-point = "./.cloudflare/worker"
