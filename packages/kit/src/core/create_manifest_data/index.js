@@ -389,7 +389,7 @@ function get_pattern(segments, add_trailing_slash) {
 							.map((part) => {
 								return part.dynamic
 									? '([^/]+?)'
-									: encodeURIComponent(part.content.normalize()).replace(
+									: encodeURI(part.content.normalize()).replace(
 											/[.*+?^${}()|[\]\\]/g,
 											'\\$&'
 									  );
